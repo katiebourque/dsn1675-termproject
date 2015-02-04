@@ -1,0 +1,75 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+.banner {
+	background-color: #f05a4b;
+}
+
+
+h1 {
+	text-align: center;
+	font-size: 4rem;
+	color: white;
+	font-family: 'Oswald', sans-serif;
+}
+
+.sun {
+	position: absolute;
+	width: 10%;
+	top: 200px;
+	left: 300px;
+}
+
+.rays {
+	position: absolute;
+	width: 17%;
+	top: 140px;
+	left: 240px;
+}
+
+.cloud {
+	position: absolute;
+	width: 20%;
+	top: 200px;
+	left: 400px;
+}
+
+.cloud2 {
+	position: absolute;
+	width: 15%;
+	top: 250px;
+	left: 100px;
+}
+
+.cloud3 {
+	position: absolute;
+	width: 20%;
+	top: 280px;
+	left: 1300px;
+}
+
+.oceandark {
+	width: 100%;
+	position: absolute;
+	top: 500px;
+}
+.oceanlight {
+	width: 100%;
+	position: absolute;
+	top: 600px;
+}
+	
