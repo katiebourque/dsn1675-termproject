@@ -4,6 +4,38 @@
 @-webkit-viewport { width: device-width; scale: 1; }
 @viewport { width: device-width; scale: 1; }
 
+
+@media screen and (min-width: 20em) {
+    .banner {
+        min-height: 250px;
+
+    }
+
+    .rays {
+        width: 40%;
+    }
+
+    .oceanlight {
+        top: 60%;
+    }
+
+    .oceandark {
+        top: 65%;
+    }
+
+    .sand {
+        top: 75%;
+    }
+
+    .starfish {
+        top: 75%;
+        width: 10%;
+    }
+
+}
+
+
+
 html {
   margin: 0;
   padding: 0;
@@ -16,28 +48,45 @@ html {
 }
 
 .banner {
-	background-color: #f05a4b;
-	min-height: 500px;
+	background-color: #bcc1c0;
+	min-height: 460px;
 	width: 100%;
+    position: relative;
+    transition: background-color 0.5s linear;
+
 }
 
+.banner:hover {
+    background-color: #a7d3ce;
+}
 
+a {
+    text-decoration: none;
+}
 
 h1 {
 	text-align: center;
-	font-size: 3.5rem;
+	font-size: 2.5rem;
 	color: white;
 	font-family: 'Oswald', sans-serif;
 	top: 50%;
 	left: 50%;
+    text-decoration: none;
 }
 
+h1:hover {
+    color: white;
 
-.bird {
-    width: 5%;
-    top: 20%;
-    left: 40%;
 }
+
+.travelicon{ 
+    transition: opacity 4s ease;
+}
+
+.travelicon:hover {
+    background-image: url("images/icon.svg")
+}
+
 .rays {
 	position: absolute;
 	width: 35%;
@@ -71,9 +120,9 @@ h1 {
     animation-name: pulse; 
 }
 
-.sand{
+.sand {
     width: 100%;
-    top: 60%;
+    top: 90%;
     position: absolute;
 
 }
@@ -138,6 +187,7 @@ h1 {
 	width: 20%;
 	top: 10%;
 	left: 20%;
+    z-index: 1000;
     -webkit-animation-duration: 10s; 
     animation-duration: 10s; 
     -webkit-animation-fill-mode: both; 
@@ -180,6 +230,61 @@ h1 {
     -webkit-animation-name: fadeOutLeftBig; 
     animation-name: fadeOutLeftBig; 
 }
+
+.bird {
+    width: 5%;
+    top: 20%;
+    position: absolute;
+    left: 25%;
+} 
+
+.cloud-bird {
+    height: 200px;
+    width: 200px;
+
+}
+
+.cloud-bird:hover .bird { 
+    -webkit-animation-duration: 9s; 
+    animation-duration: 9s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+    -webkit-animation-name: bounceOutLeft;
+    animation-name: bounceOutLeft;
+} 
+
+@-webkit-keyframes bounceOutLeft { 
+    0% { 
+        -webkit-transform: translateX(0); 
+    } 
+    20% { 
+        opacity: 1; 
+        -webkit-transform: translateX(20px); 
+    } 
+    100% { 
+        opacity: 0; 
+        -webkit-transform: translateX(-2000px); 
+    } 
+} 
+@keyframes bounceOutLeft { 
+    0% { 
+        transform: translateX(0); 
+    } 
+    20% { 
+        opacity: 1; 
+        transform: translateX(20px); 
+    } 
+    100% { 
+        opacity: 0; 
+        transform: translateX(-2000px); 
+    } 
+} 
+.bounceOutLeft:hover { 
+    -webkit-animation-name: bounceOutLeft; 
+    animation-name: bounceOutLeft; 
+}
+
+
 
 .cloud2 {
 	position: absolute;
@@ -316,6 +421,35 @@ h1 {
     -webkit-animation-name: swing; 
     animation-name: swing; 
 }
+
+
+@media screen and (min-width: 300px) {
+    .banner {
+        min-height: 250px;
+
+    }
+
+    .rays {
+        width: 40%;
+    }
+
+    .oceanlight {
+        top: 60%;
+    }
+
+    .oceandark {
+        top: 65%;
+    }
+
+    .sand {
+        top: 75%;
+    }
+
+    .starfish {
+        top: 75%;
+        width: 10%;
+    }
+
 }
 
 
