@@ -34,10 +34,10 @@ html {
 .travelicon {
     position: absolute;
     margin: 0% auto;
-    width: 10%;
+    width: 7%;
     transition: opacity 4s ease;
     top: 40%;
-    left: 44%;
+    left: 46%;
     z-index: 1000;
 }
 
