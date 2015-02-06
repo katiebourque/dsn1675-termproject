@@ -20,7 +20,7 @@ html {
 
 .banner {
 	background-color: #95c4bc;
-	min-height: 460px;
+	min-height: 700px;
 	width: 100%;
     position: relative;
     transition: background-color 0.5s linear;
@@ -52,12 +52,22 @@ h1 {
 	font-size: 2.5rem;
 	color: white;
 	font-family: 'Oswald', sans-serif;
-	top: 20%;
-	left: 40%;
+    top: 20%;
+    left: 40%;
     z-index: 1000;
     position:absolute;
 }
 
+.shore {
+    width: 100%;
+    bottom: -3px;
+    position: absolute;
+
+}
+
+.sand {
+    z-index: 1000;
+}
 
 
 
@@ -94,16 +104,10 @@ h1 {
     animation-name: pulse; 
 }
 
-.sand {
-    width: 100%;
-    top: 88%;
-    position: absolute;
-
-}
 
 .starfish {
     width: 6%;
-    top: 95%;
+    bottom:4%;
     left: 69%;
     position: absolute;
 }
@@ -219,8 +223,8 @@ h1 {
 }
 
 .cloud-bird:hover .bird { 
-    -webkit-animation-duration: 9s; 
-    animation-duration: 9s; 
+    -webkit-animation-duration: 13s; 
+    animation-duration: 13s; 
     -webkit-animation-fill-mode: both; 
     animation-fill-mode: both; 
     -webkit-animation-name: bounceOutLeft;
@@ -357,16 +361,12 @@ h1 {
     -webkit-animation-name: fadeOutLeftBig; 
     animation-name: fadeOutLeftBig; 
 }
-.oceandark {
-    width: 100%;
-    position: absolute;
-    top: 44%;
-}
+
 
 .oceanlight {
 	width: 100%;
 	position: absolute;
-	top: 40%;
+    top: 10px;
     -webkit-animation-duration: 20s; 
     animation-duration: 20s; 
     -webkit-animation-fill-mode: both; 
@@ -398,6 +398,8 @@ h1 {
 
 
 @media screen and (min-width: 20em) {
+
+        }}
 
 
 	
