@@ -1,15 +1,15 @@
-var $navBtn = $('.nav-button');
-var $nav = ('.navigation');
+var $btn = $('.btn');
+var $panel = $('.panel');
+var $btn1 =('.btn1');
+var $expanded = $('.expanded');
 
-var $xButton = $(.'x-button');
 
-
-$navBtn.on('click', function () {
-	$nav.addClass('navigation-open')
+$btn.on('click', function () {
+	$panel.toggleClass ('panel-open')
 });
 
-$navBtn.on('click', function () {
-	$navBtn.addClass('nav-none');
+$btn1.on('click', function () {
+	$expanded.toggleClass ('expanded-p')
 });
 
 
