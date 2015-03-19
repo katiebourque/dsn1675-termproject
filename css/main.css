@@ -18,6 +18,9 @@ html {
   text-ssize-adjust: 100%;
 }
 
+
+/*Pull Out Nav*/
+
 .nav-button {
     z-index: 1000;
     position: absolute;
@@ -55,6 +58,9 @@ html {
   transition: all 400ms linear;
 }
 
+
+
+/*Nav Links*/
     .navigation ul {
     display:inline-block;
 }
@@ -79,10 +85,25 @@ html {
     font-family:;
 }
 
- .navigation a:hover, .menu .current-item a {
+ .navigation a:hover, .navigation .current-item a {
     text-decoration:none;
     color:#66a992;
 }
+
+
+/*Section*/
+
+.section {
+    background-color: #ef695b;
+    min-height: 300px;
+}
+
+.item-3 {
+
+}
+
+
+/*Banner*/
 
 .banner {
 	background-color: #95c4bc;
@@ -94,14 +115,10 @@ html {
 
 }
 
-.header {
-    background-color: grey;
-    position: absolute;
-}
-
 .banner:hover {
     background-color: #a7d3ce;
 }
+
 
 .travelicon {
     position: absolute;
@@ -124,10 +141,10 @@ h1 {
 	font-size: 2.5rem;
 	color: white;
 	font-family: 'Oswald', sans-serif;
-    top: 20%;
-    left: 40%;
+    position: relative;
+    margin: 0% auto;
+    margin-top: 3em;
     z-index: 1000;
-    position:absolute;
 }
 
 .shore {
@@ -473,11 +490,5 @@ h1 {
 }
 
 
-
- 
-    .menu a {
-        display:block;
-    }
- 
 
 
