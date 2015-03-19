@@ -15,16 +15,88 @@ html {
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
+  text-ssize-adjust: 100%;
+}
+
+.nav-button {
+    z-index: 1000;
+    position: absolute;
+    top:  1.5em;
+    left: 5%;
+    height: 3em;
+    width: 3em;
+    background: url("../images/toggle.svg") no-repeat;
+    transition: all 900ms linear;
+}
+
+.navigation {
+  position: relative;  
+  z-index: 1000;
+  opacity:0;
+  height: 0;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+ width:100%;
+        padding:10px 18px;
+        box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+        border-radius:3px;
+        background:#303030;
+    }
+
+.navigation-open {
+    opacity: 1;
+    height: 100px;
+    background-color: black;
+}
+
+.nav-none {
+  display:none;
+  -webkit-transition: all 400ms linear;
+  transition: all 400ms linear;
+}
+
+    .navigation ul {
+    display:inline-block;
+}
+ 
+.navigation li {
+    margin:0px 50px 0px 0px;
+    float:left;
+    list-style:none;
+    font-size:17px;
+    font-family: oswald;
+}
+ 
+.navigation li:last-child {
+    margin-right:0px;
+}
+ 
+.navigation a {
+    text-shadow:0px 1px 0px rgba(0,0,0,0.5);
+    color:#777;
+    transition: color linear 0.15s;
+    text-decoration: none;
+    font-family:;
+}
+
+ .navigation a:hover, .menu .current-item a {
+    text-decoration:none;
+    color:#66a992;
 }
 
 .banner {
 	background-color: #95c4bc;
-	min-height: 700px;
+	min-height: 500px;
 	width: 100%;
+    overflow: hidden;
     position: relative;
     transition: background-color 0.5s linear;
 
+}
+
+.header {
+    background-color: grey;
+    position: absolute;
 }
 
 .banner:hover {
@@ -66,7 +138,9 @@ h1 {
 }
 
 .sand {
-    z-index: 1000;
+    z-index: 10000;
+    position: absolute
+    bottom: 0;
 }
 
 
@@ -363,10 +437,10 @@ h1 {
 }
 
 
-.oceanlight {
+.oceandark {
 	width: 100%;
 	position: absolute;
-    top: 10px;
+    top: -140px;
     -webkit-animation-duration: 20s; 
     animation-duration: 20s; 
     -webkit-animation-fill-mode: both; 
@@ -374,7 +448,7 @@ h1 {
         -webkit-animation-iteration-count:infinite; 
 } 
 
-@-webkit-keyframes swing { 
+@webkit-keyframes swing {
     20%, 40%, 60%, 80%, 100% { -webkit-transform-origin: top center; } 
     20% { -webkit-transform: rotate(2deg); } 
     40% { -webkit-transform: rotate(-2deg); } 
@@ -382,14 +456,16 @@ h1 {
     80% { -webkit-transform: rotate(-2deg); } 
     100% { -webkit-transform: rotate(0deg); } 
 } 
-@keyframes swing { 
+
+@keyframes swing {
     20% { transform: rotate(15deg); } 
     40% { transform: rotate(-10deg); } 
     60% { transform: rotate(5deg); } 
     80% { transform: rotate(-5deg); } 
     100% { transform: rotate(0deg); } 
 } 
-.swing { 
+
+.swing {
     -webkit-transform-origin: top center; 
     transform-origin: top center; 
     -webkit-animation-name: swing; 
@@ -397,9 +473,11 @@ h1 {
 }
 
 
-@media screen and (min-width: 20em) {
 
-        }}
+ 
+    .menu a {
+        display:block;
+    }
+ 
 
 
-	
