@@ -5,7 +5,11 @@ var $text1 = $('.text1');
 var $btn2 = $('.btn2');
 var $text2 = $('.text2');
 var $btn3 = $('.btn3');
-var $text3 = $('.text3')
+var $text3 = $('.text3');
+var $okbtn1 = $('.okbtn1');
+var $okbtn2 = $('.okbtn2');
+var $okbtn3 = $('.okbtn3')
+
 
 $btn.on('click', function () {
 	$panel.toggleClass ('panel-open')
@@ -22,3 +26,15 @@ $btn2.on('click', function () {
 $btn3.on('click', function () {
 	$text3.toggleClass ('text3-open')
 });
+
+$okbtn1.on('click', function () {
+	$text1.toggleClass ('text1-open')
+})
+
+$okbtn2.on('click', function () {
+	$text2.toggleClass ('text2-open')
+})
+
+$okbtn3.on('click', function () {
+	$text3.toggleClass ('text3-open')
+})
