@@ -37,7 +37,7 @@ html {
 }
 
 .panel {
-  background-color: #a8ddd9;
+  background-color: #d0f7f1;
   width: 100%;
    transition: all 200ms ease-out;
    display: none;
@@ -46,12 +46,12 @@ html {
 .panel-open {
     display: inline;
     width: 100%;
-    background-color: #a8ddd9;
+    background-color: #d0f7f1;
     transition: all 900ms ease-out;
 }
 
 .top {
-    background-color: #a8ddd9;
+    background-color: #d0f7f1;
 }
 
 
@@ -73,16 +73,15 @@ html {
 }
  
 .panel a {
-    text-shadow:0px 1px 0px rgba(0,0,0,0.5);
-    color:#777;
+    color: #303030;
     transition: color linear 0.15s;
     text-decoration: none;
-    font-family: 'oswald';
+    font-family: 'raleway';
 }
 
  .panel a:hover, .navigation .current-item a {
     text-decoration:none;
-    color:#66a992;
+    color: white;
 }
 
 
@@ -91,19 +90,23 @@ html {
 
 
 h2 {
-    font-family:'oswald';
+    font-family:'raleway';
+    font-size: 3rem;
     text-align: center;
-    color: grey;
+    color: #303030;
+    font-weight: 300;
 }
 
 
 .section1 {
-    background-color: #a8ddd9;
-    padding: 2rem;
+    background-color: #b2eadf;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .item1 {
-    width: 40%;
+    width: 30%;
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -112,7 +115,11 @@ h2 {
 }
 
 .section2 {
-    padding: 2rem;
+    background-color: white;
+    width: 100%;
+    background-color: #5ac2b5;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .item2 {
@@ -123,13 +130,15 @@ h2 {
 }
 
 .section3 {
-    background-color: #a8ddd9;
-    padding: 2rem;
+    background-color: #b2eadf;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 .item3 {
     width: 40%;
     display: block;
     margin: 0% auto;
+    padding: 2rem;
 
 }
 
@@ -137,7 +146,7 @@ h2 {
     display: block;
     margin: 0% auto;
     background-color: grey;
-    font-family: 'oswald';
+    font-family: 'raleway';
     color: white;
     font-size: 1.5rem;
     width: 8em;
@@ -149,23 +158,78 @@ h2 {
     background-color: #303030;
 }
 
-.expanded {
+.okbtn {
+     display: block;
+    margin: 0% auto;
+    background-color: grey;
+    font-family: 'raleway';
+    color: white;
+    font-size: 1.5rem;
+    width: 4em;
+    border: none;
+    border-radius: 10px;
+}
+
+
+.text1 {
     max-height: 0em;
   width: 100%;
-  background-color: yellow;
+  background-color: #75d3c5;
   transform: translateY(-50%);
   text-align: center;
   transition: all 200ms ease-out;
   overflow: hidden;
-    font-family: 'oswald, 300';
-    color: #303030;
-    font-size: 1rem;
+    font-family: 'raleway';
+    font-weight: 300;
+    color: white;
+    font-size: 1.5rem;
     z-index: 1000;
 }
 
-.expanded-p {
-    max-height: 10em;
+.text1-open{
+    max-height: 20em;
 }
+
+.text2 {
+    max-height: 0em;
+  width: 100%;
+  background-color: #75d3c5;
+  transform: translateY(-50%);
+  text-align: center;
+  transition: all 200ms ease-out;
+  overflow: hidden;
+    font-family: 'raleway';
+    font-weight: 300;
+    color: white;
+    font-size: 1.5rem;
+    z-index: 1000;
+}
+
+.text2-open{
+    max-height: 20em;
+}
+
+.text3 {
+    max-height: 0em;
+  width: 100%;
+  background-color: #75d3c5;
+  transform: translateY(-50%);
+  text-align: center;
+  transition: all 200ms ease-out;
+  overflow: hidden;
+    font-family: 'raleway';
+    font-weight: 300;
+    color: white;
+    font-size: 1.5rem;
+    z-index: 1000;
+}
+
+.text3-open{
+    max-height: 20em;
+}
+
+
+
 
 
 /*Banner*/
@@ -186,12 +250,10 @@ h2 {
 
 
 .travelicon {
-    position: absolute;
     margin: 0% auto;
-    width: 7%;
+    width: 9%;
     transition: opacity 4s ease;
-    top: 40%;
-    left: 46%;
+    left: calc(50-50);
     z-index: 1000;
 }
 
@@ -203,13 +265,14 @@ h2 {
 
 h1 {
 	text-align: center;
-	font-size: 4rem;
-	color: white;
-	font-family: 'Oswald', sans-serif;
+	font-size: 7rem;
+	color: #303030;
+	font-family: 'raleway', sans-serif;
+    font-weight: 300;
     position: relative;
     margin: 0% auto;
     margin-top: 1em;
-    z-index: 10000000;
+    z-index: 1000000;
 }
 
 .shore {
@@ -554,5 +617,19 @@ h1 {
 }
 
 
+/*smaller screen*/
 
+@media only screen and (min-width: 20em) {
+
+.travelicon {
+    position: absolute;
+    margin: 0% auto;
+    width: 15%;
+    transition: opacity 4s ease;
+    bottom: 2%;
+    left: 46%;
+    z-index: 1000;
+}
+
+}
 
