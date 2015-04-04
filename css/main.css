@@ -19,6 +19,26 @@ html {
 }
 
 
+
+.backtop {
+    background-color: grey;
+    min-height: 150px;
+}
+
+.top-button {
+    font-family: 'oswald', sans-serif;
+    padding-top: 3rem;
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.top-button:hover {
+    color: black;
+}
+
+
 /*Pull Out Nav*/
 
 .btn {
@@ -159,6 +179,7 @@ h2 {
     width: 8em;
     border: none;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .center-button:hover {
@@ -175,6 +196,7 @@ h2 {
     width: 4em;
     border: none;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 
@@ -257,14 +279,16 @@ h2 {
 
 
 .travelicon {
-    position: absolute;
+  display: block;
+  z-index: 10000000;
+  margin: 0% auto;
   width: 10%;
   bottom: 4rem;
 
 }
 
 .travelicon:hover {
-    background-color:#7dafa5;
+    background-color: #7dafa5;
     border-radius: 275px;
 }
 

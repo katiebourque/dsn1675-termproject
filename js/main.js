@@ -38,3 +38,9 @@ $okbtn2.on('click', function () {
 $okbtn3.on('click', function () {
 	$text3.toggleClass ('text3-open')
 })
+
+$('.top-nav').localScroll();
+
+$('.top-scroll').localScroll();
+
+$('.top-scroll-button').localScroll();
